@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .header {
@@ -209,7 +209,6 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-
 }
 
 .feynman__link{
@@ -309,6 +308,7 @@
 .footer__column-links{
   margin-bottom: 16px;
 }
+
 .footer__column-link{
   display: block;
   text-decoration: none;
