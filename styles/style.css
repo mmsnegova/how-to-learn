@@ -25,6 +25,7 @@
   width: 183px;
   z-index: 2;
 }
+
 .logo_place_header{
   height: 32px;
   position: absolute;
@@ -32,6 +33,12 @@
   left: 64px;
   background-image: url(../images/logo_place_header.svg);
 }
+
+.logo_place_footer{
+  background-image: url(../images/logo_place_footer.svg);
+  height: 35px;
+}
+
 .header__title{
   width: 730px;
   margin: 0;
@@ -141,6 +148,12 @@
   margin-bottom: 20px;
 }
 
+.section-title_theme_dark{
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
 .section-subtitle{
   margin: auto;
   padding: 0;
@@ -151,6 +164,12 @@
   font-weight: normal;
 }
 
+.section-subtitle_theme_dark{
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
 .table{
   width: 1100px;
   display: flex;
@@ -159,9 +178,23 @@
   margin: auto;
 }
 
+.table_theme_dark{
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+
 .table__cell{
   width: 250px;
   margin-top: 60px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-top: 80px;
+  z-index: 1;
 }
 
 .table__heading{
@@ -172,6 +205,10 @@
   font-weight: bold;
 }
 
+.table__heading_theme_dark{
+  color: white;
+}
+
 .table__text{
   margin: 0;
   margin-top: 20px;
@@ -179,6 +216,10 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.table__text_theme_dark{
+  color: white;
 }
 
 .feynman{
@@ -230,19 +271,6 @@
   overflow: hidden;
 }
 
-.table_theme_dark{
-  color: white;
-  z-index: 1;
-  position: relative;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-top: 80px;
-  z-index: 1;
-}
-
 .kaufman__triangle{
   width: 877px;
   position: absolute;
@@ -277,9 +305,10 @@
   position: relative;
 }
 
-.logo_place_footer{
-  background-image: url(../images/logo_place_footer.svg);
-  height: 35px;
+.footer__column_content_social{
+}
+
+.footer__column_content_info{
 }
 
 .footer__author{
@@ -293,30 +322,31 @@
   font-weight: normal;
 }
 
-.footer__column_content_info{
-  line-height: 30px;
-  font-size: 18px;
-}
-
 .footer__column-heading{
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  line-height: 30px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .footer__column-links{
   margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__socail-icon{
+  width: 16px;
+  height: 16px;
+
 }
 
 .footer__column-link{
-  display: block;
   text-decoration: none;
   color: white;
 }
-
-.footer__column_content_social{
-  line-height: 30px;
-  font-size: 18px;
-}
-
