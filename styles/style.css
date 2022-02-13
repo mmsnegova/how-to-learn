@@ -184,7 +184,6 @@
   position: relative;
 }
 
-
 .table__cell{
   width: 250px;
   margin-top: 60px;
@@ -223,7 +222,7 @@
 }
 
 .feynman{
-  height: 790px;
+  min-height: 790px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
@@ -272,7 +271,11 @@
 }
 
 .kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 877px;
+  height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
@@ -283,7 +286,7 @@
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
-  min-height: 350px;
+  box-sizing: content-box;
   display: flex;
   align-items: center;
 }
@@ -293,7 +296,7 @@
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  height: 250px;
+  min-height: 250px;
 }
 
 .footer__column{
@@ -302,7 +305,9 @@
 
 .footer__column_content_copyright{
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .footer__column_content_social{
@@ -312,11 +317,8 @@
 }
 
 .footer__author{
-  margin: auto;
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  padding: 18px 0;
+  margin: 18px 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -343,7 +345,7 @@
 .footer__socail-icon{
   width: 16px;
   height: 16px;
-
+  margin-right: 10px;
 }
 
 .footer__column-link{
